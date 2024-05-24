@@ -18,14 +18,14 @@ export const ThemeSwitcher = () => {
 
   return (
     <button
-      className={`w-14 h-8 rounded-md active:scale-100 ${switchThemeDuration} bg-slate-200 dark:bg-gray-500 shadow-md `}
+      className={`h-8 w-12 rounded-md border-solid border border-gray-200 active:scale-100 ${switchThemeDuration} bg-slate-200 dark:text-black shadow-md `}
       onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
     >
       {theme === "light" ? (
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
+          width="16"
+          height="16"
           fill="currentColor"
           className="bi bi-moon m-auto"
           viewBox="0 0 16 16"
@@ -35,8 +35,8 @@ export const ThemeSwitcher = () => {
       ) : (
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
+          width="16"
+          height="16"
           fill="currentColor"
           className="bi bi-sun m-auto"
           viewBox="0 0 16 16"
